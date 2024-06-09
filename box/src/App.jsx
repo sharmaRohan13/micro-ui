@@ -9,10 +9,10 @@ const YellowComponent = React.lazy(() => import("yellow/yellow"));
 export default function () {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <section>
+      <section className="windows-logo">
         <RedComponent value={1} />
-        <BlueComponent value={2} />
-        <GreenComponent value={3} />
+        <GreenComponent value={2} />
+        <BlueComponent value={3} />
         <YellowComponent value={4} />
       </section>
     </Suspense>
